@@ -1,0 +1,29 @@
+{
+  "name": "dotnav-doomxdd",
+  "version": "1.0.2",
+  "description": "Dot anchor navigation which allows the user to quickly navigate through page",
+  "main": "dot-nav.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dot-nav",
+    "dotnav",
+    "scrollnav",
+    "dots",
+    "scrolldots",
+    "anchornav",
+    "nav",
+    "navigation"
+  ],
+  "author": "Dominik Hošic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DooMxDD/DotNav.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DooMxDD/DotNav/issues"
+  },
+  "homepage": "https://github.com/DooMxDD/DotNav#readme"
+}

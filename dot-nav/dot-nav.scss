@@ -1,0 +1,79 @@
+/* Variables */
+
+//Dots parameters
+$dotSize: 20px;
+$dotRadius: 50%;
+$dotMargin: 10px;
+$dotTransition: all 0.3s;
+$dotBorder: 2px solid #333;
+$dotActiveColor: #333;
+
+//Title
+$titleColor: #333;
+$titleFontFamily: "Verdana", sans-serif;
+$titleFontSize: 23px;
+$titleFontWeight: 100;
+$titleLineColor: #333;
+
+//Position
+$topPos: 50%;
+$leftPos: 100px;
+$transform: translateY(-50%);
+
+.dot-nav {
+    &__container {
+        position: fixed;
+        left: $leftPos;
+        top: $topPos;
+        transform: $transform;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        width: $dotSize;
+        height: $dotSize;
+        border-radius: $dotRadius;
+        border: $dotBorder;
+        margin-top: $dotMargin;
+        margin-bottom: $dotMargin;
+        position: relative;
+        transition: $dotTransition;
+        cursor: pointer;
+
+        &:hover, &--active {
+            background-color: $dotActiveColor;
+            border-color: $dotActiveColor;
+        }
+    }
+
+    &__title {
+        color: $titleColor;
+        white-space: nowrap;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        font-family: $titleFontFamily;
+        font-weight: $titleFontWeight;
+        font-size: $titleFontSize;
+        display: none;
+        cursor: pointer;
+
+        &--active {
+            display: block;
+        }
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 2px;
+            background: $titleLineColor;
+            vertical-align: middle;
+            line-height: 20px;
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dot-nav/dist/css/dot-nav.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            font-size: 60px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .section:nth-child(1) {
+            background: #ff8b94;
+        }
+
+        .section:nth-child(2) {
+            background: #ffaaa5;
+        }
+
+        .section:nth-child(3) {
+            background: #ffd3b6;
+        }
+
+        .section:nth-child(4) {
+            background: #dcedc1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="s1" dot-nav-title="Home" class="js-dot-nav section">1</div>
+    <div id="s2" dot-nav-title="About Us" class="js-dot-nav section">2</div>
+    <div id="s3" dot-nav-title="References" class="js-dot-nav section">3</div>
+    <div id="s4" class="js-dot-nav section">4</div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
